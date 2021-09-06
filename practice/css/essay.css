@@ -10,15 +10,12 @@
 
 #minimap{
   padding: 5px;
-
   position: fixed;
   top: 5%;
   left: 93%;
   background: rgba(255,255,255,0.5);
-
   border: 2px solid rgb(255, 177, 220);
   border-radius: 10%;
-
 }
 
 #minimap > table{
@@ -37,7 +34,6 @@ caption{
   border: 1px solid rgb(255, 113, 191);
   background-color: #ffcdef;
 }
-
 
 .item:nth-child(1):hover{
   background-color:rgb(255, 199, 88);
