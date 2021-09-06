@@ -113,8 +113,6 @@ function p2_sol1() {
   for (var i = 0; i < 4; i++) {
     for (var j = 0; j < 4; j++) {
       if (puzzle[i][j] == word[0]) {
-        // 재귀 함수 dfs
-        // 헬
         dfs(i, j, 0);
       }
     }
@@ -122,39 +120,20 @@ function p2_sol1() {
   document.write(answer);
 }
 
-// 헬() 부터 시작 -> 로 키 티
-
-
-// dfs(0, 0, 0)
-// 4방 탐색
-// for i 0 ~ 4
-// dfs(-1,0,1)
+// 4방 탐색 : 상 (x-1, y), 하 (x+1, y), 좌 (x, y-1), 우 (x, y+1)
 function dfs(row, col, num) {
-  // 헬 -> 상
   if (row < 0 || col < 0 || row >= 4 || col >= 4) return; // 탐색 불가
   if (num == word.length) {
     answer = true;
     return;
   }
 
-  // 4방 탐색
-  // 상 하 좌 우
-  // 상 x-1, y
-  // 하 x+1, y
-  // 좌 x, y-1
-  // 우 x, y+1
   var dx = [-1, 1, 0, 0]
   var dy = [0, 0, -1, 1]
 
-  // 헬 -> 로 -> 키 -> 티
   if (puzzle[row][col] == word[num]) {
     for (var i = 0; i < 4; i++) {
       dfs(row + dx[i], col + dy[i], num + 1);
-      // 헬(0,0) -> 상(-1,0) : i = 0 -> dfs(-1,0,1)
-      // 행(0,0) -> 하(1,0) -> dfs(1,0,1)
-
-      // 2 - 로
-      // 행(1,0) -> 상(0,0) : dfs(0,0,2) -> 더이상 탐색 x
     }
   }
 }
