@@ -1,0 +1,139 @@
+.container{
+  display: grid;
+  grid-template-columns: 7fr 7fr 1fr;
+  gap: 20px;
+}
+
+#header{
+  height: 150px;
+}
+
+#minimap{
+  padding: 5px;
+
+  position: fixed;
+  top: 5%;
+  left: 93%;
+  background: rgba(255,255,255,0.5);
+
+  border: 2px solid rgb(255, 177, 220);
+  border-radius: 10%;
+
+}
+
+#minimap > table{
+  border-collapse: collapse;
+  width: 50px;
+  height: 50px;
+}
+
+caption{
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(225, 76, 158);
+}
+
+.item{
+  border: 1px solid rgb(255, 113, 191);
+  background-color: #ffcdef;
+}
+
+
+.item:nth-child(1):hover{
+  background-color:rgb(255, 199, 88);
+  cursor: pointer;
+}
+.item:nth-child(2):hover{
+  background-color:rgb(255, 199, 88);
+  cursor: pointer;
+}
+.item:nth-child(3):hover{
+  background-color:rgb(255, 199, 88);
+  cursor: pointer;
+}
+.item:nth-child(4):hover{
+  background-color:rgb(255, 199, 88);
+  cursor: pointer;
+}
+
+#room{
+  display: flex;
+  position: fixed;
+  z-index: -1;
+  top: 40%;
+  left: 24.5%;
+  transform: translate(-50%,-50%);
+  justify-items: center;
+}
+
+#room_1{
+  display: flex;
+  width: 280px;
+  height: 220px;
+  transform: skew(0deg, -30deg);
+  background: rgb(255, 227, 231);
+  justify-self: end;
+}
+
+#room_2{
+  display: inline;
+  width: 280px;
+  height: 220px;
+  transform: skew(0deg, 30deg);
+  background: #ffc8c8;
+  justify-self: left;
+}
+
+#room_3{
+  width: 396px;
+  height: 396px;
+  transform: rotateX(54.5deg) rotateZ(45deg);
+  background: #fff6f6;
+  position: absolute;
+  margin-top: 102.4px;
+  margin-left: 82px;
+}
+
+.message_box{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border : 2px solid rgb(216, 216, 216);
+  justify-content: center;
+  grid-column: 2/3;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.item_1{
+  background-color: #ff8a8a;
+}
+
+.new{
+  margin: 10px;
+  color:white;
+}
+
+.item_2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.message > p{
+  margin-block-end: 4px;
+  font-size: 14px;
+}
+
+textarea{
+  resize: none;
+  padding: 10px;
+  outline-style: none;
+  border-radius: 10px;
+  color: rgb(62, 62, 62);
+  border-color: rgb(216, 216, 216);
+  background-color: rgb(243, 243, 243);
+}
+
+#footer{
+  height: 150px;
+}
