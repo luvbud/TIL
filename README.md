@@ -1,13 +1,13 @@
-# TIL
-Today I Learned
+### ✍🏻 TIL 
+🧸 Today I Learned
 
-# list
+### 🏷 List
  - code
-   - ?.html
-   - styles
-   - scripts
+   - [?.html](https://github.com/luvbud/TIL/tree/master/code)
+   - [styles](https://github.com/luvbud/TIL/tree/master/code/styles)
+   - [scripts](https://github.com/luvbud/TIL/tree/master/code/scripts)
  - document
-   - HTML
-   - CSS3
-   - Javascript
-   - etc.
+   - [HTML](https://github.com/luvbud/TIL/tree/master/document/HTML)
+   - [CSS3](https://github.com/luvbud/TIL/tree/master/document/CSS3)
+   - [Javascript](https://github.com/luvbud/TIL/tree/master/document/Javascript)
+   - [etc.](https://github.com/luvbud/TIL/tree/master/document/others)
