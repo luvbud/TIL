@@ -1,7 +1,7 @@
 # TIL ✍🏻 
-Today I Learned 🧸
+Today I Learned
 
-## List
+## List 🧸
  - code
    - [?.html](https://github.com/luvbud/TIL/tree/master/code)
    - [styles](https://github.com/luvbud/TIL/tree/master/code/styles)
