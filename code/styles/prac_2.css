@@ -34,9 +34,10 @@ nav {
 }
 
 .icon {
-  width: 400px;
+  /* width: 400px; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .icon > img {
