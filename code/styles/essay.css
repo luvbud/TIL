@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(255, 254, 249);
+}
+
 .container{
   display: grid;
   grid-template-columns: 7fr 7fr 1fr;
@@ -63,21 +67,17 @@ caption{
 }
 
 #room_1{
-  display: flex;
   width: 280px;
   height: 220px;
   transform: skew(0deg, -30deg);
   background: rgb(255, 227, 231);
-  justify-self: end;
 }
 
 #room_2{
-  display: inline;
   width: 280px;
   height: 220px;
   transform: skew(0deg, 30deg);
   background: #ffc8c8;
-  justify-self: left;
 }
 
 #room_3{
@@ -88,6 +88,13 @@ caption{
   position: absolute;
   margin-top: 102.4px;
   margin-left: 82px;
+}
+
+#room img {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 180px;
+  
 }
 
 .message_box{
