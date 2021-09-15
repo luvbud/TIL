@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+    .container {
+      height: 200px;
+      border: 5px dashed orange;
+      display: flex;
+      /* flex-direction: column-reverse; */
+      flex-wrap: wrap;
+      
+    }
+    .item {
+      width: 200px;
+      height: 50px;
+      margin: 5px;
+      background-color: paleturquoise;
+      border: 3px solid blue;
+      font-size: 30px;
+      /* flex-grow: 1; */
+      /* flex-basis: 100px; */
+      /* flex-basis: 0; */
+      /* flex-shrink: 0; */
+      flex: initial;
+    }
+    /* .item:nth-child(1) {
+      flex-shrink: 0;
+      /* flex-grow: 5; 
+    }
+    .item:nth-child(2){
+      /* flex-grow: 1; 
+    }
+    .item:nth-child(3) {
+      flex-shrink: 2; 
+      /* flex-grow: 3; 
+    } */
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">FfffLEX</div>
+    <div class="item">!</div>
+    <div class="item">!</div>
+    <!-- <div class="item">4</div>
+    <div class="item">5</div> -->
+  </div>
+</body>
+</html>
