@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .check[type=checkbox] {
+      display: none;
+    }
+
+    .con {
+      display: grid;
+      /* flex-wrap: wrap-reverse; */
+      /* width: 100px; */
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .item {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+    }
+    .animal { background-color: blue; }
+    .animal > h2 { color: red; }
+    .my-bg:active{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="my-bg">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, aperiam accusantium! Atque, alias adipisci unde non nobis, cupiditate beatae ratione ad, libero ipsum nemo. Labore fugit aliquid nam exercitationem ad!
+    </p>
+  </div>
+
+  <a style="text-decoration-line: none;" href="https://www.example.com">naver</a>
+  <form action="" method="GET">
+    <input type="checkbox" class="check">
+    <input type="checkbox" class="check">
+    <input type="checkbox" class="check">
+    <input type="checkbox" class="check">
+    <!-- <div class="check">
+      <input type="checkbox">
+    </div>
+    <div class="check">
+      <input type="checkbox">
+    </div>
+    <div class="check">
+      <input type="checkbox">
+    </div> -->
+
+</form>
+
+<div class="con">
+
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+</div>
+
+<div class="animal">
+  <h2>강아지</h2>
+  <p>멍멍</p>
+</div>
+<div class="animal">
+  <h2>고양이</h2>
+  <p>야옹</p>
+</div>
+<div class="animal">
+  <p>으헝</p>
+  <h2>호랑이</h2>
+</div>
+</body>
+</html>
