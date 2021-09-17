@@ -144,26 +144,50 @@ function dfs(row, col, num) {
 
 // 케이스
 
-// var arr = [[1,3]];
-// var num = 1;
+// let arr = [[1,3]];
+// let num = 1;
 
-// var arr = [[3]];
-// var num = 1;
+// let arr = [[3]];
+// let num = 1;
 
-// var arr = [[1,2],[3,4]];
-// var num = 3;
+// let arr = [[1,2],[3,4]];
+// let num = 3;
 
-// var arr = [[1,3,3,4],[1,5,6,7],[1,2,3,99],[1,2,3,100]];
-// var num = 11;
+// let arr = [[1,3,3,4],[1,5,6,7],[1,2,3,99],[1,2,3,100]];
+// let num = 11;
 
-// var arr = [[4,5,6,7,8],[11,12,13,14,15],[15,16,19,33,35],[6,8,20,22,88],[8,55,66,77,100]];
-// var num = 11;
+// let arr = [[4,5,6,7,8],[11,12,13,14,15],[15,16,19,33,35],[6,8,20,22,88],[8,55,66,77,100]];
+// let num = 11;
 
-// p3_sol1();
+// p3_sol1(arr, num);
 
 // 방법 1
-function p3_sol1() {
-
+function p3_sol1(arr, num) {
+  const maxArray = arr[arr.length - 1];
+  const minNum = arr[0].length - 1;
+  let min = arr[0][0];
+  let max = maxArray[minNum] + 1;
+  while (min < max) {
+    let mid = min + Math.floor((max - min) / 2);
+    let cnt = 0;
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[i][j] <= mid) {
+          cnt++;
+        }
+        else {
+          break;
+        }
+      }
+    }
+    if (cnt < num) {
+      min = mid + 1;
+    }
+    else {
+      max = mid;
+    }
+  }
+  return min;
 }
 
 
